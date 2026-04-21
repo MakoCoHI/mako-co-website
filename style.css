@@ -1,0 +1,123 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --teal:    #00737a;
+  --teal-dk: #005258;
+  --ink:     #1a1a2e;
+  --mid:     #4a4a6a;
+  --light:   #f5f7f8;
+  --white:   #ffffff;
+  --border:  #e0e4e8;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ── Header ── */
+header {
+  background: var(--teal);
+  color: var(--white);
+  padding: 4rem 0 3.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+/* ── Sections ── */
+section {
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--teal-dk);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  color: var(--mid);
+  max-width: 640px;
+}
+
+/* ── Service cards ── */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.service-card {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.75rem;
+}
+
+.service-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+}
+
+/* ── Contact ── */
+.email-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--teal);
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.email-link:hover {
+  border-color: var(--teal);
+}
+
+/* ── Footer ── */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+}

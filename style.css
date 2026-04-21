@@ -10,10 +10,10 @@
   --coral:    #e8705a;
   --sand:     #fbb040;
   --sand-dk:  #d4a84a;
-  --ink:      #2c1810;
-  --mid:      #5c3d2e;
-  --border:   #ddc89a;
-  --bg:       #fdf6ec;
+  --ink:      #0a2a3a;
+  --mid:      #1a4a5a;
+  --border:   #c8960a;
+  --bg:       #fbb040;
 }
 
 body {
@@ -204,7 +204,7 @@ p {
 }
 
 .service-card {
-  background: #f5dfa0;
+  background: #fcc55a;
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1.75rem;

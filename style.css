@@ -19,7 +19,7 @@
 body {
   font-family: "Segoe UI", system-ui, sans-serif;
   color: var(--ink);
-  background: var(--bg);
+  background: var(--sand);
   line-height: 1.7;
 }
 

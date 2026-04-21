@@ -8,8 +8,8 @@
   --ocean:    #0077a8;
   --ocean-dk: #005577;
   --coral:    #e8705a;
-  --sand:     #f5e6c8;
-  --sand-dk:  #e8d5a8;
+  --sand:     #e8c87a;
+  --sand-dk:  #d4a84a;
   --ink:      #2c1810;
   --mid:      #5c3d2e;
   --border:   #ddc89a;
@@ -204,7 +204,7 @@ p {
 }
 
 .service-card {
-  background: var(--sand);
+  background: #f5dfa0;
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1.75rem;

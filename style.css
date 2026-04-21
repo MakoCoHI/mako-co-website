@@ -9,9 +9,9 @@
   --teal-dk: #005258;
   --ink:     #1a1a2e;
   --mid:     #4a4a6a;
-  --light:   #f5f7f8;
-  --white:   #ffffff;
-  --border:  #e0e4e8;
+  --light:   #eef1f0;
+  --white:   #f2f4f3;
+  --border:  #d4d9d7;
 }
 
 body {
@@ -44,7 +44,7 @@ header h1 {
 .tagline {
   margin-top: 0.5rem;
   font-size: 1.1rem;
-  opacity: 0.85;
+  color: #cce8ea;
 }
 
 /* ── Sections ── */

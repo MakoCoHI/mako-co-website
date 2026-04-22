@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — U-Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    table { border-collapse: collapse; width: 100%; margin-bottom: 1rem; }
+    th, td { text-align: left; padding: 0.5rem 0.75rem; border: 1px solid #ddd; }
+    th { background: #f5f5f5; }
+    code { font-family: monospace; font-size: 0.9em; background: #f5f5f5; padding: 0.1em 0.3em; border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy for U-Gallery</h1>
+  <p><strong>Last updated:</strong> 2026-04-21</p>
+
+  <p>
+    U-Gallery ("the app") is an Android gallery and file manager developed by macdog15.
+    This policy explains what data the app accesses and how it is handled.
+  </p>
+
+  <h2>Summary</h2>
+  <p><strong>U-Gallery does not collect, transmit, or share any personal data.</strong> Everything the app does happens on your device.</p>
+  <ul>
+    <li>No analytics, no telemetry, no crash reporting.</li>
+    <li>No advertising, no trackers, no third-party SDKs.</li>
+    <li>No accounts, no cloud sync, no network requests.</li>
+    <li>No data leaves your device.</li>
+  </ul>
+
+  <h2>Permissions the app requests</h2>
+  <p>U-Gallery requests the following Android permissions solely to provide gallery and file-manager functionality:</p>
+  <table>
+    <thead>
+      <tr><th>Permission</th><th>Why it is needed</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>READ_MEDIA_IMAGES</code></td><td>Read photos on your device so you can browse them.</td></tr>
+      <tr><td><code>READ_MEDIA_VIDEO</code></td><td>Read videos on your device so you can browse and open them.</td></tr>
+      <tr><td><code>MANAGE_MEDIA</code></td><td>Perform delete, move, and copy operations on your media without a prompt for every file.</td></tr>
+      <tr><td><code>MANAGE_EXTERNAL_STORAGE</code></td><td>Browse folders outside the standard media locations and perform file operations (move, copy, rename, delete) across arbitrary directories.</td></tr>
+      <tr><td><code>SET_WALLPAPER</code></td><td>Set a selected image as the device wallpaper when you use the "Set as wallpaper" action.</td></tr>
+    </tbody>
+  </table>
+  <p>You can revoke any of these permissions at any time in Android Settings. Revoking them may disable the corresponding features.</p>
+
+  <h2>Data storage</h2>
+  <p>U-Gallery stores a small amount of information locally on your device to remember your preferences and organization:</p>
+  <ul>
+    <li><strong>Favorites</strong> — which media items you have starred.</li>
+    <li><strong>User-created albums</strong> — album names and the list of media in each album.</li>
+    <li><strong>App preferences</strong> — sort order, grid column count, theme choice, and similar UI settings.</li>
+  </ul>
+  <p>
+    This data is stored in the app's private storage (a local Room database and SharedPreferences).
+    It is not accessible to other apps and is never transmitted off the device.
+    Uninstalling the app removes this data.
+  </p>
+
+  <h2>External players</h2>
+  <p>
+    When you open a video and choose an external player via the system chooser, Android passes a URI
+    for that video to the player you selected. U-Gallery has no control over how that third-party app
+    handles the file; please consult that app's privacy policy.
+  </p>
+
+  <h2>Children's privacy</h2>
+  <p>U-Gallery does not knowingly collect any data from anyone, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be published in the app's repository with a new "Last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:mako.company.hawaii@gmail.com">mako.company.hawaii@gmail.com</a></p>
+
+  <hr />
+  <p>&copy; 2026 Mako Co LLC. All rights reserved.</p>
+
+</body>
+</html>

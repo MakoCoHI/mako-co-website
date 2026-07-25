@@ -24,10 +24,10 @@
   </nav>
 
   <h1>Privacy Policy for U-Gallery</h1>
-  <p><strong>Last updated:</strong> 2026-04-21</p>
+  <p><strong>Last updated:</strong> 2026-07-24</p>
 
   <p>
-    U-Gallery ("the app") is an Android gallery and file manager developed by Mako Co.
+    U-Gallery ("the app") is an Android gallery and file manager developed by Mako Co LLC.
     This policy explains what data the app accesses and how it is handled.
   </p>
 
@@ -36,8 +36,8 @@
   <ul>
     <li>No analytics, no telemetry, no crash reporting.</li>
     <li>No advertising, no trackers, no third-party SDKs.</li>
-    <li>No accounts, no cloud sync, no network requests.</li>
-    <li>No data leaves your device.</li>
+    <li>No accounts, no cloud sync.</li>
+    <li>The app makes no network requests of its own.</li>
   </ul>
 
   <h2>Permissions the app requests</h2>
@@ -49,24 +49,60 @@
     <tbody>
       <tr><td><code>READ_MEDIA_IMAGES</code></td><td>Read photos on your device so you can browse them.</td></tr>
       <tr><td><code>READ_MEDIA_VIDEO</code></td><td>Read videos on your device so you can browse and open them.</td></tr>
-      <tr><td><code>MANAGE_MEDIA</code></td><td>Perform delete, move, and copy operations on your media without a prompt for every file.</td></tr>
-      <tr><td><code>MANAGE_EXTERNAL_STORAGE</code></td><td>Browse folders outside the standard media locations and perform file operations (move, copy, rename, delete) across arbitrary directories.</td></tr>
+      <tr><td><code>READ_MEDIA_VISUAL_USER_SELECTED</code></td><td>On Android 14 and later you may grant access to only a selection of your media rather than all of it. This permission lets the app remember that selection between launches, so you are not asked to re-pick every time.</td></tr>
+      <tr><td><code>MANAGE_MEDIA</code></td><td>Optional. If you enable "Media management" for U-Gallery in Android Settings, move, copy, and delete operations you have already confirmed in the app proceed without an additional system dialog for each file. The app works normally without it — you simply confirm each operation.</td></tr>
       <tr><td><code>SET_WALLPAPER</code></td><td>Set a selected image as the device wallpaper when you use the "Set as wallpaper" action.</td></tr>
     </tbody>
   </table>
+  <p>
+    <strong>U-Gallery does not request All Files Access (<code>MANAGE_EXTERNAL_STORAGE</code>).</strong>
+    The app can only see photos and videos, and only in the standard media locations. It cannot read
+    documents, downloads, or other apps' files. <code>MANAGE_MEDIA</code> is a separate, narrower
+    permission that applies only to media files and grants no access to anything else.
+  </p>
+  <p>
+    Writes are limited by Android to the <code>Pictures/</code>, <code>DCIM/</code>, and
+    (for videos) <code>Movies/</code> directories.
+  </p>
   <p>You can revoke any of these permissions at any time in Android Settings. Revoking them may disable the corresponding features.</p>
+
+  <h2>Comics folder access</h2>
+  <p>
+    The CBZ comic reader asks you to pick one folder using the Android system folder picker.
+    U-Gallery keeps read-only access to that folder so your library is still there next time you
+    open the app. Comic archives are only ever read, never modified or deleted, and no other folder
+    becomes accessible. You can revoke this at any time from within the app or by clearing the
+    app's data.
+  </p>
 
   <h2>Data storage</h2>
   <p>U-Gallery stores a small amount of information locally on your device to remember your preferences and organization:</p>
   <ul>
     <li><strong>Favorites</strong> — which media items you have starred.</li>
     <li><strong>User-created albums</strong> — album names and the list of media in each album.</li>
-    <li><strong>App preferences</strong> — sort order, grid column count, theme choice, and similar UI settings.</li>
+    <li><strong>Favorite folders</strong> — folders you have starred for quick access.</li>
+    <li><strong>Comic reading progress</strong> — the last page you read in each comic, plus the location of the comics folder you granted.</li>
+    <li><strong>App preferences</strong> — sort order, grid column count, theme choice, folder view mode, chosen external video player, comic reading direction, and similar UI settings.</li>
+    <li><strong>A media index cache</strong> — a local snapshot of the list of media on your device (file names, paths, sizes, dimensions, and dates) so the app can display your library immediately on launch instead of re-scanning.</li>
   </ul>
   <p>
-    This data is stored in the app's private storage (a local Room database and SharedPreferences).
-    It is not accessible to other apps and is never transmitted off the device.
-    Uninstalling the app removes this data.
+    This data is stored in the app's private storage (a local Room database, SharedPreferences, and
+    a cache file). It is not accessible to other apps. Uninstalling the app removes it.
+  </p>
+  <p>
+    No photos or videos are copied into the app's own storage. When you move or copy media, the
+    files stay in your device's normal media storage.
+  </p>
+
+  <h2>Android backup</h2>
+  <p>
+    U-Gallery participates in Android's standard backup system. If you have device backup enabled in
+    your Android settings, the app's preferences and its album and favorites database may be included
+    in your device backup and stored in your own Google account, the same way as for other apps on
+    your device. This is handled entirely by Android — U-Gallery does not send this data anywhere
+    itself, and neither Mako Co LLC nor anyone else can access it. <strong>Your photos and videos are
+    not part of this</strong>; only the small preference and album records described above. You can
+    turn device backup off in Android Settings.
   </p>
 
   <h2>External players</h2>
@@ -80,7 +116,7 @@
   <p>U-Gallery does not knowingly collect any data from anyone, including children.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If this policy changes, the updated version will be published in the app's repository with a new "Last updated" date.</p>
+  <p>If this policy changes, an updated version will be published on this page with a new "Last updated" date.</p>
 
   <h2>Contact</h2>
   <p>Questions about this policy: <a href="mailto:mako.company.hawaii@gmail.com">mako.company.hawaii@gmail.com</a></p>
